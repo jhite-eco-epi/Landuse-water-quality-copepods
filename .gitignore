@@ -1,0 +1,27 @@
+.DS_Store
+.Rhistory
+.Rdata
+.RData
+.Ruserdata
+Rplots.pdf
+
+# RStudio / IDE junk (do not commit)
+.Rproj.user/
+**/.Rproj.user/
+
+# OS / editor junk
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary / cache files
+*.tmp
+*.temp
+*.bak
+*.log
+
+# Analysis outputs (generated)
+02_Rcode/
+sem_runner/results/
+depth_profiles/outputs/
