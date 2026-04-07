@@ -1,0 +1,7 @@
+equation,response,n_total,n_used,n_dropped,vars_required,top_missing
+bf_cal,cal_log1p,39,39,0,"cal_log1p, oxy, pH",calanoids (0); oxygen (0); pH (0)
+bf_chl0,chl_log1p,39,28,11,"chl_log1p, defor",deforestation (% forest loss) (11); chlorophyll (0)
+bf_cyc,cyc_log1p,39,39,0,"cyc_log1p, pH, cal_log1p",cyclopoids (0); pH (0); calanoids (0)
+bf_oxy,oxy,39,39,0,"oxy, temp, chl_log1p",oxygen (0); temperature (0); chlorophyll (0)
+bf_pH,pH,39,39,0,"pH, chl_log1p",pH (0); chlorophyll (0)
+bf_temp,temp,39,28,11,"temp, defor",deforestation (% forest loss) (11); temperature (0)

@@ -1,0 +1,4 @@
+equation,response,n_total,n_used,n_dropped,vars_required,top_missing
+bf_cal,cal_log1p,39,39,0,"cal_log1p, eutroph",calanoids (0); eutrophication composite (0)
+bf_cyc,cyc_log1p,39,28,11,"cyc_log1p, eutroph, cal_log1p, defor",deforestation (% forest loss) (11); cyclopoids (0); eutrophication composite (0); calanoids (0)
+bf_eut,eutroph,39,28,11,"eutroph, defor",deforestation (% forest loss) (11); eutrophication composite (0)

@@ -1,0 +1,7 @@
+equation,response,n_lakes
+bf_cal,cal_log1p,39
+bf_cyc,cyc_log1p,39
+bf_oxy,oxy,39
+bf_pH,pH,39
+bf_chl0,chl_log1p,28
+bf_temp,temp,28

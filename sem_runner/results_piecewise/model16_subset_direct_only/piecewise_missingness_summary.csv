@@ -1,0 +1,2 @@
+equation,response,n_total,n_used,n_dropped,vars_required,top_missing
+bf_cyc,cyc_log1p,39,28,11,"cyc_log1p, defor",deforestation (% forest loss) (11); cyclopoids (0)

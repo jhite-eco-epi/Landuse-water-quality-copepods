@@ -1,0 +1,2 @@
+from,to,from_label,to_label,median_raw,q2.5_raw,q97.5_raw,nonzero_95_raw,median_std,q2.5_std,q97.5_std,nonzero_95_std,label_std
+defor,cyc_log1p,deforestation,cyclopoids,0.017070860380240485,-7.643620224487476e-4,0.03495322261774199,FALSE,0.3637163951755735,-0.016285705185426207,0.7447228696808863,FALSE,0.364

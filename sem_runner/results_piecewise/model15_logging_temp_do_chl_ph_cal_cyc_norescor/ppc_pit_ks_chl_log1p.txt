@@ -1,0 +1,7 @@
+
+	Exact one-sample Kolmogorov-Smirnov test
+
+data:  pit_df$pit
+D = 0.11, p-value = 0.8508
+alternative hypothesis: two-sided
+

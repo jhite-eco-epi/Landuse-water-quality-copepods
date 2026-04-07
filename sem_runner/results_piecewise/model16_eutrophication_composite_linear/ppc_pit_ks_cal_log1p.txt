@@ -1,0 +1,7 @@
+
+	Asymptotic one-sample Kolmogorov-Smirnov test
+
+data:  pit_df$pit
+D = 0.13038, p-value = 0.5211
+alternative hypothesis: two-sided
+

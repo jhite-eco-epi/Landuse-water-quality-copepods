@@ -1,0 +1,2 @@
+response,n_obs,n_params,max_rhat,min_ess_bulk,min_ess_tail,n_divergent,n_treedepth_saturated,ppc_density,pit_csv,pit_hist,pit_ecdf
+cyc_log1p,28,6,1.0003385185720202,4502.240176320026,5223.884046373169,0,0,ppc_cyc_log1p.png,ppc_pit_cyc_log1p.csv,ppc_pit_hist_cyc_log1p.png,ppc_pit_ecdf_cyc_log1p.png

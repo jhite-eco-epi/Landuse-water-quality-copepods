@@ -1,0 +1,3 @@
+response,n_obs,n_params,max_rhat,min_ess_bulk,min_ess_tail,n_divergent,n_treedepth_saturated,ppc_density,pit_csv,pit_hist,pit_ecdf
+cyc_log1p,28,7,1.0015633569166085,4169.353436397446,5776.904913057363,0,0,ppc_cyc_log1p.png,ppc_pit_cyc_log1p.csv,ppc_pit_hist_cyc_log1p.png,ppc_pit_ecdf_cyc_log1p.png
+eutroph,28,6,1.0006666337801684,4621.501965208887,5327.602324301313,0,0,ppc_eutroph.png,ppc_pit_eutroph.csv,ppc_pit_hist_eutroph.png,ppc_pit_ecdf_eutroph.png

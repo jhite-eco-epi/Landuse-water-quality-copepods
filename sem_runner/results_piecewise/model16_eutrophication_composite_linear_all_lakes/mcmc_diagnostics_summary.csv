@@ -1,0 +1,4 @@
+response,n_obs,n_params,max_rhat,min_ess_bulk,min_ess_tail,n_divergent,n_treedepth_saturated,ppc_density,pit_csv,pit_hist,pit_ecdf
+cal_log1p,39,6,1.0011033645665888,4734.465839658563,5344.806713941818,0,0,ppc_cal_log1p.png,ppc_pit_cal_log1p.csv,ppc_pit_hist_cal_log1p.png,ppc_pit_ecdf_cal_log1p.png
+cyc_log1p,28,8,1.0005986615615714,4819.543781501904,6755.1864889891285,0,0,ppc_cyc_log1p.png,ppc_pit_cyc_log1p.csv,ppc_pit_hist_cyc_log1p.png,ppc_pit_ecdf_cyc_log1p.png
+eutroph,28,6,1.0006666337801684,4621.501965208887,5327.602324301313,0,0,ppc_eutroph.png,ppc_pit_eutroph.csv,ppc_pit_hist_eutroph.png,ppc_pit_ecdf_eutroph.png

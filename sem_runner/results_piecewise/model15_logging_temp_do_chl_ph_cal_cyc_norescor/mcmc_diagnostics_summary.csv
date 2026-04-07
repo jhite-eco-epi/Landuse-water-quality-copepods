@@ -1,0 +1,7 @@
+response,n_obs,n_params,max_rhat,min_ess_bulk,min_ess_tail,n_divergent,n_treedepth_saturated,ppc_density,pit_csv,pit_hist,pit_ecdf
+cal_log1p,39,7,1.0004454963932614,5130.758021925184,6913.109378110934,0,0,ppc_cal_log1p.png,ppc_pit_cal_log1p.csv,ppc_pit_hist_cal_log1p.png,ppc_pit_ecdf_cal_log1p.png
+chl_log1p,28,6,1.0012476635630327,4832.511332068163,6200.4583411090925,0,0,ppc_chl_log1p.png,ppc_pit_chl_log1p.csv,ppc_pit_hist_chl_log1p.png,ppc_pit_ecdf_chl_log1p.png
+cyc_log1p,39,7,1.0013616062435682,4317.833113500718,5600.59541241342,0,0,ppc_cyc_log1p.png,ppc_pit_cyc_log1p.csv,ppc_pit_hist_cyc_log1p.png,ppc_pit_ecdf_cyc_log1p.png
+oxy,39,7,1.0010078033514855,4969.090166456838,7045.634139065986,0,0,ppc_oxy.png,ppc_pit_oxy.csv,ppc_pit_hist_oxy.png,ppc_pit_ecdf_oxy.png
+pH,39,6,1.0003907836873842,4586.128951189239,6078.045235892216,0,0,ppc_pH.png,ppc_pit_pH.csv,ppc_pit_hist_pH.png,ppc_pit_ecdf_pH.png
+temp,28,6,1.0007759265830762,5050.046357275088,6733.413913185505,0,0,ppc_temp.png,ppc_pit_temp.csv,ppc_pit_hist_temp.png,ppc_pit_ecdf_temp.png

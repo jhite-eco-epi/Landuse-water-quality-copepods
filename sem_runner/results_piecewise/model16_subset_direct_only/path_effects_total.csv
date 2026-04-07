@@ -1,0 +1,2 @@
+from,to,direct_included,n_indirect_paths,median,q2.5,q97.5,n_draws,nonzero_95,median_std,q2.5_std,q97.5_std,nonzero_95_std,from_label,to_label
+defor,cyc_log1p,TRUE,0,0.017070860380240485,-7.643620224487476e-4,0.03495322261774199,12000,FALSE,0.3637163951755735,-0.016285705185426207,0.7447228696808863,FALSE,deforestation,cyclopoids
