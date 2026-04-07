@@ -1,0 +1,22 @@
+variable1,variable2,label1,label2,spearman_r
+integrated_chl,integrated_chl,Chlorophyll,Chlorophyll,1
+integrated_fDOM,integrated_fDOM,fDOM,fDOM,1
+integrated_pH,integrated_pH,pH,pH,1
+integrated_temp,integrated_temp,Temperature,Temperature,1
+integrated_DO_percent,integrated_DO_percent,DO,DO,1
+thermocline_depth_m,thermocline_depth_m,Thermocline Depth,Thermocline Depth,0.9999999999999999
+integrated_fDOM,integrated_DO_percent,fDOM,DO,-0.8253036437246963
+integrated_pH,integrated_DO_percent,pH,DO,0.7880566801619433
+integrated_fDOM,integrated_pH,fDOM,pH,-0.7206477732793523
+integrated_chl,integrated_DO_percent,Chlorophyll,DO,-0.5599190283400809
+integrated_chl,integrated_fDOM,Chlorophyll,fDOM,0.5491902834008097
+integrated_fDOM,thermocline_depth_m,fDOM,Thermocline Depth,-0.5384615384615384
+integrated_chl,thermocline_depth_m,Chlorophyll,Thermocline Depth,-0.4669000984790458
+integrated_temp,integrated_DO_percent,Temperature,DO,0.4435222672064777
+integrated_chl,integrated_pH,Chlorophyll,pH,-0.41923076923076924
+integrated_pH,integrated_temp,pH,Temperature,0.3854251012145749
+integrated_fDOM,integrated_temp,fDOM,Temperature,-0.3412955465587045
+integrated_DO_percent,thermocline_depth_m,DO,Thermocline Depth,0.32881059196848667
+integrated_chl,integrated_temp,Chlorophyll,Temperature,-0.3218623481781377
+integrated_pH,thermocline_depth_m,pH,Thermocline Depth,0.2771638034795929
+integrated_temp,thermocline_depth_m,Temperature,Thermocline Depth,0.11981617244775138
