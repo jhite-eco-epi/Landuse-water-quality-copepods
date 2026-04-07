@@ -4,7 +4,7 @@ suppressPackageStartupMessages({
   library(tidyverse)
 })
 
-DATA_RDS_DEFAULT <- "01_WorkingData/main_zooplankton_data.rds"
+DATA_RDS_DEFAULT <- "data/main_zooplankton_data.rds"
 
 norm_id <- function(x) tolower(trimws(as.character(x)))
 safe_num <- function(x) suppressWarnings(as.numeric(x))

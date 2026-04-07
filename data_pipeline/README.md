@@ -12,11 +12,11 @@ This folder contains the active, sample-level data integration pipeline used to 
 - Writes the sample-level main dataset
 
 ## Inputs
-- `01_WorkingData/Sonde Data/VancouverSondeData2023_UTF8.csv`
-- `01_WorkingData/Bathymetry Data/LakeBathymetry.csv` (regenerated from Excel)
-- `01_WorkingData/LakeGeography/Field_2023_Lake_Level_Ocean_Distance.csv`
-- `01_WorkingData/Zooplankton ID Data/ZoopIDDataUpdated.csv`
-- `01_WorkingData/Infection Data/42_Lake_Copepod_Infection.csv` (joined by lake + shallow/deep; single samples fall back to deep then shallow)
+- `data/Sonde Data/VancouverSondeData2023_UTF8.csv`
+- `data/Bathymetry Data/LakeBathymetry.csv` (regenerated from Excel)
+- `data/LakeGeography/Field_2023_Lake_Level_Ocean_Distance.csv`
+- `data/Zooplankton ID Data/ZoopIDDataUpdated.csv`
+- `data/Infection Data/42_Lake_Copepod_Infection.csv` (joined by lake + shallow/deep; single samples fall back to deep then shallow)
 
 ## How to run
 ```r
@@ -25,8 +25,8 @@ Rscript run_pipeline.R
 ```
 
 ## Outputs (main)
-- `01_WorkingData/main_zooplankton_data.csv`
-- `01_WorkingData/main_zooplankton_data.rds`
+- `data/main_zooplankton_data.csv`
+- `data/main_zooplankton_data.rds`
 
 ## Key columns
 - IDs/meta: `SampleID`, `LakeID`, `Depth_Tow_m`, `zoop_sample_type` (shallow/deep/single)

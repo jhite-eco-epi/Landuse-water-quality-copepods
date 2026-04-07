@@ -606,7 +606,7 @@ process_infection_data <- function(infection_path) {
 }
 
 # Function 3: Get Lake-Level Variables (constant within lake)
-get_lake_level_data <- function(bathy_path, geo_path, sonde_path = "01_WorkingData/Sonde Data/VancouverSondeData2023_UTF8.csv") {
+get_lake_level_data <- function(bathy_path, geo_path, sonde_path = "data/Sonde Data/VancouverSondeData2023_UTF8.csv") {
   message("Processing lake-level variables...")
   
   # Process bathymetry - support CSV or Excel based on extension
@@ -749,7 +749,7 @@ get_lake_level_data <- function(bathy_path, geo_path, sonde_path = "01_WorkingDa
     rename(DFO_m = Ocean_Distance_m)
 
   # === Optional: Join Land Use data if available ===
-  landuse_path <- "01_WorkingData/LandUse/land_use.csv"
+  landuse_path <- "data/LandUse/land_use.csv"
   if (file.exists(landuse_path)) {
     land_use <- read.csv(landuse_path, check.names = FALSE) %>%
       # Expect a column named 'lake_name' with values like "X Lake"
@@ -784,11 +784,11 @@ get_lake_level_data <- function(bathy_path, geo_path, sonde_path = "01_WorkingDa
 
 # Main function to create sample-level dataset with deployment-matched sonde data
 create_sample_level_dataframe <- function(
-  sonde_path = "01_WorkingData/Sonde Data/VancouverSondeData2023_UTF8.csv",
-  bathy_path = "01_WorkingData/Bathymetry Data/LakeBathymetry.csv",
-  geo_path = "01_WorkingData/LakeGeography/Field_2023_Lake_Level_Ocean_Distance.csv",
-  zoop_path = "01_WorkingData/Zooplankton ID Data/ZoopIDDataUpdated.csv",
-  infection_path = "01_WorkingData/Infection Data/42_Lake_Copepod_Infection.csv"
+  sonde_path = "data/Sonde Data/VancouverSondeData2023_UTF8.csv",
+  bathy_path = "data/Bathymetry Data/LakeBathymetry.csv",
+  geo_path = "data/LakeGeography/Field_2023_Lake_Level_Ocean_Distance.csv",
+  zoop_path = "data/Zooplankton ID Data/ZoopIDDataUpdated.csv",
+  infection_path = "data/Infection Data/42_Lake_Copepod_Infection.csv"
 ) {
   
   # Process each dataset

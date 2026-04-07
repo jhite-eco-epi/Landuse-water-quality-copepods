@@ -6,11 +6,23 @@ suppressPackageStartupMessages({
   library(tidyverse)
 })
 
+# Shared default exclusions for downstream analyses and reporting
+default_lake_exclusions <- function() {
+  tibble::tibble(
+    LakeID = c("Nimpkish", "Msk"),
+    reason = c(
+      "Saline/ultra-deep (a priori exclusion)",
+      "Manual exclusion"
+    )
+  )
+}
+
 # Exclude lakes by name
-# - df: data.frame with a LakeID column
+# - df: data.frame with a lake identifier column
 # - lakes: character vector of LakeID values to exclude (case-insensitive)
-exclude_lakes <- function(df, lakes = c("nimpkish", "msk"), .warn = TRUE) {
-  if (!"LakeID" %in% names(df)) return(df)
+# - lake_col: name of the lake identifier column
+exclude_lakes <- function(df, lakes = default_lake_exclusions()$LakeID, lake_col = "LakeID", .warn = TRUE) {
+  if (!lake_col %in% names(df)) return(df)
 
   # Name-based exclusion
   extra_env <- Sys.getenv("EXCLUDE_LAKES_EXTRA", "")
@@ -20,14 +32,15 @@ exclude_lakes <- function(df, lakes = c("nimpkish", "msk"), .warn = TRUE) {
   if (!is.null(extra_opt)) extra_vec <- c(extra_vec, extra_opt)
   extra_vec <- tolower(trimws(extra_vec))
   lakes_all <- unique(c(tolower(lakes), extra_vec))
-  remove_by_name <- tolower(df$LakeID) %in% lakes_all
+  lake_vals <- as.character(df[[lake_col]])
+  remove_by_name <- tolower(trimws(lake_vals)) %in% lakes_all
 
   keep <- !remove_by_name
   out <- df[keep, , drop = FALSE]
 
   if (isTRUE(.warn)) {
     removed <- sum(!keep, na.rm = TRUE)
-    removed_names <- unique(tolower(df$LakeID[remove_by_name]))
+    removed_names <- unique(tolower(trimws(lake_vals[remove_by_name])))
     msg <- paste0(
       "exclude_lakes: removed ", removed, " rows",
       if (length(removed_names)) paste0("; names: ", paste(sort(removed_names), collapse = ", ")) else ""
@@ -41,8 +54,9 @@ exclude_lakes <- function(df, lakes = c("nimpkish", "msk"), .warn = TRUE) {
 # Example usage downstream (not executed here):
 # library(readr)
 # source("data_pipeline/postprocessing.R")
-# df <- readRDS("01_WorkingData/main_zooplankton_data.rds")
+# df <- readRDS("data/main_zooplankton_data.rds")
 # df_clean <- exclude_lakes(df)                 # default excludes nimpkish and msk
+# ex_tbl <- default_lake_exclusions()           # names + reasons for reporting
 # df_clean2 <- exclude_lakes(df, lakes = c("nimpkish","another"))
 # # proceed with modeling using df_clean*
 
