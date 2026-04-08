@@ -1,4 +1,4 @@
-# SEM model: model_run
+# SEM model: model15_logging_temp_do_chl_ph_cal_cyc_norescor
 
 
 
@@ -87,11 +87,11 @@ Figure. Piecewise structural equation model (SEM) of deep/single lakes. The path
 
 
 
-Panel A (Path diagram). Directed graph with edges labeled by posterior median standardized coefficients (global SD scaling). Raw and standardized edge summaries are saved in `path_diagram_edges.csv` (columns `*_raw` and `*_std`). Node names: thermocline depth = “thermo”, chlorophyll = “chl_log1p”, calanoids = “cal_log1p”, cyclopoids = “cyc_log1p”, pH = “pH”, oxygen = “oxy”.
+Panel A (Path diagram). Directed graph with edges labeled by posterior median standardized coefficients (global SD scaling). Raw and standardized edge summaries are saved in `path_diagram_edges.csv` (columns `*_raw` and `*_std`). Node names: thermocline depth = “thermo”, chlorophyll = “chl_log1p”, calanoids = “cal_log1p”, cyclopoids = “cyc_log1p”, pH = “pH”, oxygen = “oxy”, temperature = “temp”, deforestation = “defor”.
 
 
 
-Panels B–C (conditional effects). Fitted mean responses with 95% credible bands for exemplar paths; x‑axes cover the central 96% of observed predictor values (2nd–98th percentiles).
+Panels B–J (conditional effects). Each panel displays the fitted mean response (solid line) as a function of the listed predictor, with a 95% credible band (2.5%–97.5% posterior quantiles of the intercept and slope) shown in gray; x‑axes span the 2nd–98th percentiles of the observed predictor. Paths shown: (B) deforestation (% forest loss) → temperature; (C) deforestation (% forest loss) → chlorophyll; (D) temperature → oxygen; (E) chlorophyll → oxygen; (F) chlorophyll → pH; (G) oxygen → calanoids; (H) pH → calanoids; (I) pH → cyclopoids; (J) calanoids → cyclopoids.
 
 
 

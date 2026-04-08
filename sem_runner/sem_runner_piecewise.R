@@ -3,14 +3,6 @@
 # Piecewise SEM runner: fit each equation as a separate brms model
 # so each "piece" can use all available data (different n per equation).
 #
-# This is intended to slot into the existing SEM workflow:
-# - uses the same spec files under sem_runner/specs/
-# - writes similar outputs (coefficients_*.csv, path_effects.csv, path_diagram.png,
-#   composite_sem_AA_BC.(png|tiff), README.md)
-#
-# Key difference vs sem_runner_deep.R:
-# - There is no single multivariate brmsfit object, so residual correlations
-#   and any joint-likelihood coupling are not estimated.
 
 suppressPackageStartupMessages({
   library(brms)
